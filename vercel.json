@@ -3,6 +3,10 @@
         {
             "source": "/api/:path*",
             "destination": "https://fetchquest-backend.onrender.com/api/:path*"
+        },
+        {
+            "source": "/((?!_next/|assets/|api/|favicon.ico).*)",
+            "destination": "/index.html"
         }
     ]
 }
